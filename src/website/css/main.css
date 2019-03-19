@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+strong {
+    font-family: 'Montserrat Medium';
+}
+
+a {
+    color: #31b0f5;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: .8;
+}
+
+main > article > header {
+    background-image: url('../images/header-background.jpg');
+    background-position-y: 1450px;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: absolute;
+    width: 150%;
+    height: 900px;
+    top: -550px;
+    left: -25%;
+    padding: 0 25%;
+    box-sizing: border-box;
+    border-radius: 48%;
+    z-index: -1;
+}
+
+main > article > header > #header-text {
+    font-size: 24px;
+    font-family: 'Montserrat Light';
+    color: #f5f5f5;
+    padding: 15px;
+    max-width: 170px;
+
+    position: absolute;
+    top: 550px;
+    left: 17%;
+    width: 100%;
+}
+
+main > article > header > #data {
+    padding-bottom: 120px;
+    width: 700px;
+}
+
+main > article > header > #data > #data-location {
+    width: 600px;
+    margin: auto;
+}
+
+main > article > header > #data > #data-location > #data-location-city {
+    font-size: 26px;
+    font-family: 'Montserrat';
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+main > article > header > #data > #data-location > #data-location-other {
+    font-size: 20px;
+    font-family: 'Montserrat Medium';
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+main > article > header > #data > #data-weather {
+    font-size: 26px;
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main > article > header > #data > #data-weather .icon {
+    width: 28px;
+    height: 28px;
+    vertical-align: bottom;
+}
+
+
+main > article > section {
+    padding-top: 380px;
+    text-align: center;
+}
+
+main > article > section h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Montserrat';
+}
+
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1276px;
+    width: 100%;
+    margin: auto;
+}
+
+.charts .chart {
+    max-width: 600px;
+    width: 100%;
+    margin: 15px 8px;
+}
+
+main > article > footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+    vertical-align: bottom;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media screen and (max-width: 1100px) {
+    main > article > header {
+        border-radius: 43%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main > article > header {
+        border-radius: 38%;
+    }
+
+    main > article > header > #data {
+        padding-bottom: 65px;
+        width: 100%;
+    }
+
+    main > article > header > #data > #data-location {
+        width: 90%;
+    }
+
+    main > article > header > #data > #data-weather {
+        justify-content: space-around;
+    }
+
+    main > article > header > #data > #data-weather > div {
+        padding: 0 10px;
+    }
+
+    main > article > header > #data > #data-location, main > article > header > #data > #data-weather {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 600px) {
+    main > article > header {
+        border-radius: 28%;
+        height: 950px;
+    }
+
+    main > article > header > #data {
+        padding-bottom: 25px;
+    }
+
+    main > article > section {
+        padding-top: 440px;
+    }
+}
